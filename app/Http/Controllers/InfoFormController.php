@@ -30,7 +30,7 @@ class InfoFormController extends Controller
             'gender'=>$request->gender,
             'skill'=>json_encode($request->skill),
         ]);
-        $request->session()->flash('success', 'Form Submitted successfully!');
+        $request->session()->flash('success', 'Form performed successfully!');
 
         return back();
             
